@@ -43,7 +43,7 @@ with col1:
     METS_IR = st.number_input("METS_IR:", min_value=0.00, max_value=500.00, value=22.00)
 with col2:
     st.subheader("Prediction Results")
-    feature_values = [Age,Duration_of_diabetes,SCII,PLT,AST_ALT,PBG,HbAlc,VFA,METS_IR]
+    feature_values = ['PBG', 'HbAlc','Age','VFA','METS_IR','AST_ALT','PLT','Duration_of_diabetes','SCII']
     features = np.array([feature_values]).reshape(1, -1)
 
     if st.button("Predict"):
