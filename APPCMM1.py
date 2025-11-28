@@ -21,7 +21,7 @@ Duration_of_diabetes = {
 
 
 # Define feature names from the new dataset
-feature_names = ['PBG', 'HbAlc','Age','VFA','METS_IR','AST_ALT','PLT','Duration_of_diabetes','SCII']
+feature_names = [PBG, HbAlc, Age, VFA, METS_IR, AST_ALT, PLT, Duration_of_diabetes, SCII]
 
 # Streamlit user interface
 st.title("CMM Predictor")
