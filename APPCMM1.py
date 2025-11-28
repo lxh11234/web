@@ -21,7 +21,7 @@ Duration_of_diabetes = {
 
 
 # Define feature names from the new dataset
-feature_names = [PBG, HbAlc, Age, VFA, METS_IR, AST_ALT, PLT, Duration_of_diabetes, SCII]
+feature_names = ['PBG', 'HbAlc','Age','VFA','METS_IR','AST_ALT','PLT','Duration_of_diabetes','SCII']
 
 # Streamlit user interface
 st.title("CMM Predictor")
@@ -43,7 +43,7 @@ with col1:
     METS_IR = st.number_input("METS_IR:", min_value=0.00, max_value=500.00, value=22.00)
 with col2:
     st.subheader("Prediction Results")
-    feature_values = ['PBG', 'HbAlc','Age','VFA','METS_IR','AST_ALT','PLT','Duration_of_diabetes','SCII']
+    feature_values = [PBG, HbAlc, Age, VFA, METS_IR, AST_ALT, PLT, Duration_of_diabetes, SCII]
     features = np.array([feature_values]).reshape(1, -1)
 
     if st.button("Predict"):
